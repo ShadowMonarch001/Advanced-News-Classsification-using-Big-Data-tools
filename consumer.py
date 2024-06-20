@@ -16,8 +16,8 @@ try:
     print("Consumer initialized successfully")
 
     # Initialize Supabase client
-    SUPABASE_URL = "https://zsmabakfawjhsetabnue.supabase.co"
-    SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpzbWFiYWtmYXdqaHNldGFibnVlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTU0OTY1NjksImV4cCI6MjAzMTA3MjU2OX0.M0tJ7R8ViR_MAax6MB_ru1Nlg_46q6MbgzQ8AfOerqc"
+    SUPABASE_URL = "Enter your Supabase url"
+    SUPABASE_KEY = "Enter your Supabase key"
     supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
     
         # Process messages
