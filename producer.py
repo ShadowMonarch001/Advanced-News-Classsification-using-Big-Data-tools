@@ -5,7 +5,7 @@ from pyspark.ml import PipelineModel
 from pyspark.sql import SparkSession
 import os
 
-os.environ['PYSPARK_PYTHON'] = r'/home/satvam/anaconda3/bin/python'
+os.environ['PYSPARK_PYTHON'] = r'/path/to/python'
 
 # Create a SparkSession
 spark = SparkSession.builder \
@@ -47,7 +47,7 @@ kafka_topic = 'news_test'
 kafka_servers = ['localhost:9092']
 
 # Initialize News API client
-newsapi = NewsApiClient(api_key='6edd5a1fd88643bca6c6b65a6f3d6178')
+newsapi = NewsApiClient(api_key='Enter your News API key here')
 
 # Load a saved PipelineModel object
 pipeline_model = PipelineModel.load("mypipeline")
